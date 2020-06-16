@@ -35,7 +35,6 @@ for contorno in contours:
     area = cv2.contourArea(contorno)
     if area > maior_area:
         contorno_maior_area.append(contorno)
-        print(area)
 
 for contorno in contorno_maior_area:
     areaPixel = cv2.contourArea(contorno)
